@@ -22,10 +22,12 @@
   line-height: 1.5;
   z-index: 1;
 }
+
 .hero__sub{
   font-size: 1.8em;
   font-weight: 300;
 }
+
 .hero__picture{
   width: 420px;
   margin-left: -90px;
