@@ -10,7 +10,6 @@
   </div>
 </template>
 
-
 <style scoped>
 .hero {
   height: 100vh;
