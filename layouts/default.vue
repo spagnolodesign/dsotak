@@ -15,8 +15,8 @@ export default {
   }
 }
 </script>
+
 <style>
-@import url('https://fonts.googleapis.com/css?family=Chivo:300,400|Playfair+Display:400i,700i&display=swap');
 
 body{
   --color-text: #284135;
