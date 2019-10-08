@@ -19,6 +19,7 @@
   justify-content: space-between;
   padding: 1em;
   position: fixed;
+  z-index:1;
 }
 .nav__logo{
   font-size: 1em;

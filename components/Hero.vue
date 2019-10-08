@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="hero__intro">
-      <h1 class="hero__title">For the love of ehtical travel</h1>
+      <h1 class="hero__title">for the love of ethical travel</h1>
       <p class="hero__sub">travel assistance + advising</p>
     </div>
     <div>
