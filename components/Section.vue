@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import imagesLoaded from 'imagesLoaded';
+import imagesLoaded from 'imagesloaded'
 import SmoothScroll from '~/plugins/SmoothScroll'
 
 export default {
