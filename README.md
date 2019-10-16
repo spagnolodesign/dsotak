@@ -1,6 +1,9 @@
-# dsotak
+# Dsotak 
 
-> Website for Diana Sotak
+> Website for Diana Sotak - Personal Travel Agent
+
+At the moment the website is visible here:
+[Live link](https://zen-blackwell-a7662a.netlify.com/)
 
 ## Build Setup
 
