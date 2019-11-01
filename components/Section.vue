@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div>
     <div class="content">				
 				<div class="item">
 					<div class="item__img-wrap"><div class="item__img item__img--t1"></div></div>
@@ -14,16 +14,19 @@
 					<div class="item__img-wrap"><div class="item__img item__img--t1"></div></div>
 				</div>
       </div>
-  </section>
+			<Footer />
+  </div>
+	
 </template>
 
 <script>
 import imagesLoaded from 'imagesloaded'
 import SmoothScroll from '~/plugins/SmoothScroll'
+import Footer from '~/components/Footer'
 
 export default {
-  mounted() {
-		console.log('start');
+	components: { Footer },
+	mounted() {
 		/***********************************/
 		/********** Preload stuff **********/
 
@@ -57,8 +60,9 @@ export default {
 	flex-direction: column;
 	position: relative;
 	align-items: center;
-	padding: 12rem 0;
+	padding: 0;
 	counter-reset: figure; 
+	margin-top: 4em;
 }
 
 .item {
@@ -67,16 +71,17 @@ export default {
 	max-width: 100%;
 	position: relative;
 	will-change: transform;
-	margin-bottom:50vh; 
+	flex-direction: column;
 }
 
 .item::before {
 	counter-increment: figure;
 	content: counter(figure, decimal-leading-zero);
 	position: absolute;
-	font-size: 10rem;
-	color: var(--color-text);
-	bottom: calc(100% - 3rem);
+	font-size: 7rem;
+	color: var(--color-background-text);
+	bottom: calc(100% - 3.5rem);
+	left: -13px;
 }
 
 .item:nth-child(even)::before {
@@ -96,7 +101,7 @@ export default {
 .item:first-child .item__img-wrap {
 	--aspect-ratio: 10/10;
 	--image: url(/hp_1.jpg);
-	width: 700px;
+	width: 32em;
 }
 
 .item:nth-child(2) .item__img-wrap {
@@ -122,9 +127,16 @@ export default {
 }
 
 
-.item__caption {
+.item:first-child .item__caption {
 	width: 30vw;
-	padding: 2rem 1rem;
+	margin-top: 6em;
+	margin-left: 3em;
+}
+
+.item:nth-child(2) .item__caption {
+	width: 30vw;
+	margin-top: 4em;
+	margin-left: 0em;
 }
 
 .item__caption-title {
@@ -132,7 +144,6 @@ export default {
 	font-size: 2em;
 	margin: 0;
 	will-change: transform;
-
 }
 
 .item__caption-copy {
@@ -150,4 +161,22 @@ export default {
 }
 
 
+@media (min-width: 600px) {
+	.content {
+		margin-top: 0;
+	}
+  .item {
+		display: flex;
+		margin: 0 auto;
+		max-width: 100%;
+		position: relative;
+		will-change: transform;
+		margin-bottom:50vh; 
+		flex-direction: row;
+	}
+	.item::before {
+		font-size: 10rem;
+		left: auto;
+	}
+}
 </style>

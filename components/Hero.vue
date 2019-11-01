@@ -16,11 +16,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .hero__intro {
-  line-height: 1.5;
+  line-height: 1;
   z-index: 1;
+}
+
+.hero__title{
+  margin-bottom: 0.3em;
 }
 
 .hero__sub{
@@ -32,5 +37,18 @@
   width: 420px;
   margin-left: -90px;
   z-index: 0;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    flex-direction: row;
+  }
+  .hero__intro {
+    line-height: 1.5;
+    z-index: 1;
+  }
+  .hero__title{
+    margin-bottom: 0;
+  }
 }
 </style>

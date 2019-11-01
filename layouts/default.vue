@@ -24,6 +24,7 @@ body{
 	--color-link: #b07656;
 	--color-link-hover: #000;
 	--color-deco: #e4dbd6;
+  --color-background-text: #eaeaea;
   color: var(--color-text);
 	background-color: var(--color-bg);
   font-family: 'Chivo', sans-serif;
@@ -52,17 +53,39 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: italic;
 }
+
 a{
   color: #284135;
 }
+
 h1 {
   font-size: 3em;
 }
+
 h2{
   font-size: 2.2em;
 }
+
 .container {
-  width: 80vw;
+  width: 92vw;
   margin: 0 auto;
 }
+
+.italic{
+  font-style: italic;
+}
+
+boldy{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5em; 
+}
+
+@media (min-width: 600px) {
+  .container{
+    width: 80vw;
+  }
+}
+
 </style>

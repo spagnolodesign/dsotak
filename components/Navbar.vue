@@ -1,7 +1,8 @@
 <template>
   <nav class="nav">
     <nuxt-link :to="{name: 'index'}" class="nav__logo">
-      Diana Sotak
+      FTLO <br />
+      Ethical Travel
     </nuxt-link>
     <div class="nav__links">
       <nuxt-link :to="{name: 'about'}" class="nav__link">About</nuxt-link>
@@ -13,24 +14,31 @@
 
 
 <style scoped>
-.nav{
+.nav {
   display: flex;
   width: 100vw;
   justify-content: space-between;
   padding: 1em;
-  position: fixed;
-  z-index:1;
+  position: relative;
+  background: #FFF;
+  z-index: 1;
+  border-bottom: 1px solid #e2e2e2;
 }
+
 .nav__logo{
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
   text-decoration: none;
+}
+.nav__links {
+  text-align: right;
+  width: 50vw;
 }
 .nav__link{
   text-decoration: none;
   cursor: pointer;
   pointer-events: all;
-  margin-left: 1em;
+  margin-left: 0em;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 0.9em;
@@ -57,6 +65,18 @@
   visibility: visible;
   width: 100%;
   left: 0%;
+}
+
+@media (min-width: 600px) {
+  .nav{
+    position: fixed;
+    z-index:1;
+    background: transparent;
+    border-bottom: none;
+  }
+  .nav__logo{
+    font-size: 1em;
+  }
 }
 
 </style>
