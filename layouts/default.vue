@@ -57,7 +57,10 @@ h1, h2, h3, h4, h5, h6 {
 a{
   color: #284135;
 }
-
+p{
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
 h1 {
   font-size: 3em;
 }
@@ -75,11 +78,10 @@ h2{
   font-style: italic;
 }
 
-boldy{
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
+.boldy{
+  font-weight: 600;
   font-style: italic;
-  font-size: 1.5em; 
+  font-size: 1.1em; 
 }
 
 @media (min-width: 600px) {

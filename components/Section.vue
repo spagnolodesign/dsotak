@@ -38,7 +38,9 @@ export default {
 		};
 
 		// And then..
-		preloadImages().then(() => {
+		preloadImages()
+		.then(() => {
+			console.log('done');
 			// Remove the loader
 			// document.body.classList.remove('loading');
 	
@@ -72,6 +74,7 @@ export default {
 	position: relative;
 	will-change: transform;
 	flex-direction: column;
+	margin-bottom: 2em;
 }
 
 .item::before {
@@ -128,20 +131,14 @@ export default {
 
 
 .item:first-child .item__caption {
-	width: 30vw;
-	margin-top: 6em;
-	margin-left: 3em;
+	margin: 2em 1.5em 4em 2em;
 }
-
 .item:nth-child(2) .item__caption {
-	width: 30vw;
-	margin-top: 4em;
-	margin-left: 0em;
+	margin: 0 1.5em 4em 2em;
 }
 
 .item__caption-title {
 	font-weight: 400;
-	font-size: 2em;
 	margin: 0;
 	will-change: transform;
 }
@@ -178,5 +175,19 @@ export default {
 		font-size: 10rem;
 		left: auto;
 	}
+
+	.item:first-child .item__caption {
+		margin:3em 2em 0 2em;
+		width: 30vw;
+	}
+	.item:nth-child(2) .item__caption {
+		margin: 0;
+		width: 30vw;
+	}
+
+	.item__caption-title {
+		font-size: 2em;
+	}
+
 }
 </style>
